@@ -284,9 +284,10 @@ footer{text-align:center; padding:32px 28px; color:var(--fg-muted); font-family:
 .identity-card:last-child{border-right:none;}
 @media (max-width:760px){.identity-card{border-right:none; border-bottom:1px solid var(--line);} .identity-card:last-child{border-bottom:none;}}
 .identity-card:hover{background:var(--panel);}
-.identity-label{font-family:var(--font-display); font-weight:800; font-size:2rem; letter-spacing:0.04em; text-transform:uppercase; color:var(--amber);}
-.identity-label.dev{color:var(--teal); font-family:var(--font-mono); letter-spacing:0.02em;}
-.identity-desc{color:var(--fg-muted); font-size:14px; margin-top:12px; max-width:36ch;}
+.identity-kicker{font-family:var(--font-mono); font-size:11.5px; color:var(--fg-muted); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:10px; opacity:0.75;}
+.identity-label{font-family:var(--font-mono); font-weight:700; font-size:clamp(1.7rem,4vw,2.1rem); letter-spacing:0.1em; text-transform:uppercase; color:var(--amber);}
+.identity-label.dev{color:var(--teal);}
+.identity-desc{color:var(--fg-muted); font-size:14px; margin-top:12px; max-width:38ch;}
 .identity-tags{display:flex; flex-wrap:wrap; gap:6px; margin-top:14px;}
 .identity-arrow{font-family:var(--font-mono); font-size:13px; color:var(--fg-muted); margin-top:16px; display:inline-block;}
 .identity-card:hover .identity-arrow{color:var(--amber);}
