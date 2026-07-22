@@ -16,10 +16,19 @@
 <header class="nav">
   <div class="nav-inner">
     <a href="index.html" class="brand">
-      <span class="monogram" aria-hidden="true">
-        <span class="mono-a">A</span><span class="mono-s">S</span>
-        <span class="mono-dot"></span>
-      </span>
+      <svg class="monogram-svg" viewBox="0 0 64 64" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#eecb87"/>
+            <stop offset="55%" stop-color="#caa455"/>
+            <stop offset="100%" stop-color="#232c42"/>
+          </linearGradient>
+        </defs>
+        <text x="4" y="42" font-family="Georgia, 'Times New Roman', serif" font-size="38" font-weight="700" fill="url(#logoGrad)">A</text>
+        <text x="27" y="46" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="700" fill="url(#logoGrad)" opacity="0.92">S</text>
+        <line x1="8" y1="51" x2="56" y2="51" stroke="url(#logoGrad)" stroke-width="1.2"/>
+        <circle cx="32" cy="51" r="2.1" fill="url(#logoGrad)"/>
+      </svg>
       <span class="brand-text">
         <span class="brand-name">Asif Sajad</span>
         <span class="brand-tag">Data Science &amp; ML</span>
@@ -33,12 +42,11 @@
       <a href="experience.html">Experience</a>
       <a href="projects.html">Projects</a>
       <a href="contact.html">Contact</a>
-      <a href="https://github.com/AasifSajad" target="_blank" rel="noopener">GitHub</a>
       <div class="nav-socials">
-        <a href="https://github.com/AasifSajad" target="_blank" rel="noopener" aria-label="GitHub">gh</a>
-        <a href="https://www.linkedin.com/in/asif-sajad-9b8128278/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
-        <a href="mailto:aasifsajad2@gmail.com" aria-label="Email">@</a>
-        <a href="https://www.instagram.com/_aasifff.sajad_?igsh=amRtZTMwc3QyZ2Rl" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+        <a href="https://github.com/AasifSajad" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+        <a href="https://www.linkedin.com/in/asif-sajad-9b8128278/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a href="mailto:aasifsajad2@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        <a href="https://www.instagram.com/_aasifff.sajad_?igsh=amRtZTMwc3QyZ2Rl" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg></a>
       </div>
       <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">🌙</button>
     </nav>
