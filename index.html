@@ -22,10 +22,19 @@
 <header class="nav">
   <div class="nav-inner">
     <a href="index.html" class="brand">
-      <span class="monogram" aria-hidden="true">
-        <span class="mono-a">A</span><span class="mono-s">S</span>
-        <span class="mono-dot"></span>
-      </span>
+      <svg class="monogram-svg" viewBox="0 0 64 64" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#eecb87"/>
+            <stop offset="55%" stop-color="#caa455"/>
+            <stop offset="100%" stop-color="#232c42"/>
+          </linearGradient>
+        </defs>
+        <text x="4" y="42" font-family="Georgia, 'Times New Roman', serif" font-size="38" font-weight="700" fill="url(#logoGrad)">A</text>
+        <text x="27" y="46" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="700" fill="url(#logoGrad)" opacity="0.92">S</text>
+        <line x1="8" y1="51" x2="56" y2="51" stroke="url(#logoGrad)" stroke-width="1.2"/>
+        <circle cx="32" cy="51" r="2.1" fill="url(#logoGrad)"/>
+      </svg>
       <span class="brand-text">
         <span class="brand-name">Asif Sajad</span>
         <span class="brand-tag">Data Science &amp; ML</span>
@@ -39,12 +48,11 @@
       <a href="experience.html">Experience</a>
       <a href="projects.html">Projects</a>
       <a href="contact.html">Contact</a>
-      <a href="https://github.com/AasifSajad" target="_blank" rel="noopener">GitHub</a>
       <div class="nav-socials">
-        <a href="https://github.com/AasifSajad" target="_blank" rel="noopener" aria-label="GitHub">gh</a>
-        <a href="https://www.linkedin.com/in/asif-sajad-9b8128278/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
-        <a href="mailto:aasifsajad2@gmail.com" aria-label="Email">@</a>
-        <a href="https://www.instagram.com/_aasifff.sajad_?igsh=amRtZTMwc3QyZ2Rl" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+        <a href="https://github.com/AasifSajad" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+        <a href="https://www.linkedin.com/in/asif-sajad-9b8128278/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a href="mailto:aasifsajad2@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        <a href="https://www.instagram.com/_aasifff.sajad_?igsh=amRtZTMwc3QyZ2Rl" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg></a>
       </div>
       <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">🌙</button>
     </nav>
@@ -66,6 +74,134 @@
       <path d="M-50,500 C 260,480 500,560 760,500 S 1000,540 1050,500"/>
       <circle cx="150" cy="120" r="3"/>
       <circle cx="640" cy="95" r="2.5" style="animation-delay:1.5s"/>
+      <circle cx="820" cy="330" r="3" style="animation-delay:3s"/>
+      <circle cx="300" cy="440" r="2.5" style="animation-delay:2s"/>
+    </svg>
+    <div class="wrap">
+      <div class="status-pill"><span class="status-dot"></span> OPEN TO DATA / ML ROLES &amp; WEB DEV WORK</div>
+      <div class="hero-grid">
+        <div>
+          <h1 class="name"><span class="name-line">ASIF</span><span class="name-line accent">SAJAD</span></h1>
+          <p class="tagline">3rd-year undergrad who turns raw data into models that hold up — Python, R, and C++ underneath.</p>
+          <div class="role-line">&gt; <span id="roleType"></span><span class="role-cursor"></span></div>
+          <div class="locale">📍 Pulwama, Jammu and Kashmir, India</div>
+          <div class="hero-cta">
+            <a href="mailto:aasifsajad2@gmail.com" class="btn btn-primary">Get in Touch →</a>
+            <a href="cv.html" class="btn btn-ghost">Download CV</a>
+            <a href="projects.html" class="btn btn-ghost">View Projects</a>
+          </div>
+          <div class="social-row">
+            <a href="https://github.com/AasifSajad" target="_blank" rel="noopener"><span class="soc-ic"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></span> GitHub</a>
+            <a href="https://www.linkedin.com/in/asif-sajad-9b8128278/" target="_blank" rel="noopener"><span class="soc-ic"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></span> LinkedIn</a>
+            <a href="mailto:aasifsajad2@gmail.com"><span class="soc-ic"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span> Email</a>
+            <a href="https://www.instagram.com/_aasifff.sajad_?igsh=amRtZTMwc3QyZ2Rl" target="_blank" rel="noopener"><span class="soc-ic"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg></span> Instagram</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="profile-v2.jpg" alt="Asif Sajad" class="profile-photo--main">
+          <div class="cap"><span>fit_model(df)</span><span>R² = 0.94</span></div>
+          <svg viewBox="0 0 300 170" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="150" x2="300" y2="150" stroke="var(--line)" stroke-width="1"/>
+            <line x1="0" y1="0" x2="0" y2="150" stroke="var(--line)" stroke-width="1"/>
+            <path class="reg-line" d="M10,140 C 90,110 200,60 290,20"/>
+            <circle class="pt" cx="24" cy="130" r="5" style="animation-delay:.5s"/>
+            <circle class="pt" cx="55" cy="118" r="5" style="animation-delay:.6s"/>
+            <circle class="pt" cx="80" cy="100" r="5" style="animation-delay:.7s"/>
+            <circle class="pt" cx="110" cy="95" r="5" style="animation-delay:.8s"/>
+            <circle class="pt" cx="140" cy="80" r="5" style="animation-delay:.9s"/>
+            <circle class="pt" cx="170" cy="68" r="5" style="animation-delay:1s"/>
+            <circle class="pt" cx="200" cy="55" r="5" style="animation-delay:1.1s"/>
+            <circle class="pt" cx="230" cy="45" r="5" style="animation-delay:1.2s"/>
+            <circle class="pt" cx="260" cy="30" r="5" style="animation-delay:1.3s"/>
+            <circle class="pt" cx="280" cy="20" r="5" style="animation-delay:1.4s"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="identity-split reveal">
+        <a href="skills.html" class="identity-card">
+          <div class="identity-kicker">df.role()</div>
+          <div class="identity-label">Analyst</div>
+          <p class="identity-desc">Data Science student who turns raw, messy data into models that hold up — comfortable across the full pipeline: cleaning, exploratory analysis, statistical testing, and model evaluation. Currently deep in optimization algorithms and applied ML.</p>
+          <div class="identity-tags">
+            <span class="tag">Python</span><span class="tag">R</span><span class="tag">Pandas</span><span class="tag">scikit-learn</span><span class="tag">Statistics</span><span class="tag">NumPy</span>
+          </div>
+          <span class="identity-arrow">View skills →</span>
+        </a>
+        <a href="projects.html" class="identity-card">
+          <div class="identity-kicker">&lt;role.build()&gt;</div>
+          <div class="identity-label dev">Developer</div>
+          <p class="identity-desc">Builds ML pipelines end-to-end and ships clean, responsive websites from scratch — structured, functional, and built to actually work on every screen. Comfortable owning a project from raw idea to deployed site.</p>
+          <div class="identity-tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Git</span><span class="tag">Responsive Design</span><span class="tag">GitHub Pages</span>
+          </div>
+          <span class="identity-arrow">View projects →</span>
+        </a>
+      </div>
+
+      <div class="stats reveal">
+        <div class="stat"><div class="num" data-count="1">0</div><div class="label">INTERNSHIPS</div></div>
+        <div class="stat"><div class="num" data-count="5">0</div><div class="label">CERTIFICATIONS</div></div>
+        <div class="stat"><div class="num" data-count="2">0</div><div class="label">PROJECTS BUILT</div></div>
+        <div class="stat"><div class="num" data-count="2028">0</div><div class="label">GRADUATING</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="latest-work">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="df-call">df.<b>latest</b>()</span>
+        <h2 class="section-title">Some of my latest work</h2>
+      </div>
+      <div class="work-grid">
+        <a href="https://github.com/AasifSajad/HAOA-Hybrid-Adaptive-Optimization-Algorithm" target="_blank" rel="noopener" class="work-card reveal">
+          <div class="work-cat">Optimization Research</div>
+          <div class="work-title">HAOA — Hybrid Adaptive Optimization Algorithm</div>
+        </a>
+        <a href="projects.html" class="work-card reveal">
+          <div class="work-cat">Web Design &amp; Dev</div>
+          <div class="work-title">This Portfolio Website</div>
+        </a>
+        <a href="about.html" class="work-card reveal">
+          <div class="work-cat">NIT Srinagar</div>
+          <div class="work-title">Machine Learning Internship</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="terminal" style="padding-top:56px;">
+    <div class="wrap">
+      <div class="term-window reveal" id="termWindow">
+        <div class="term-titlebar">
+          <span class="term-dot" style="background:#ff5f56;"></span>
+          <span class="term-dot" style="background:#ffbd2e;"></span>
+          <span class="term-dot" style="background:#27c93f;"></span>
+          <span class="term-title">asif@portfolio: ~</span>
+        </div>
+        <pre class="term-body" id="termBody"></pre>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <nav class="footer-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="experience.html">Experience</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+    <a href="cv.html">CV</a>
+  </nav>
+  <div class="footer-copy">© 2026 <a href="index.html">Asif Sajad</a> · <a href="#top">Back to top ↑</a></div>
+</footer>
+
+<script src="script.js?v=2"></script>
+</body>
+</html>      <circle cx="640" cy="95" r="2.5" style="animation-delay:1.5s"/>
       <circle cx="820" cy="330" r="3" style="animation-delay:3s"/>
       <circle cx="300" cy="440" r="2.5" style="animation-delay:2s"/>
     </svg>
