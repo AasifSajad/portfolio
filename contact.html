@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Asif Sajad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script data-goatcounter="https://asifsajad.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body data-theme="dark" id="top">
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="monogram">AS</span>
+      <span class="brand-text">
+        <span class="brand-name">Asif Sajad</span>
+        <span class="brand-tag">Data Science &amp; ML</span>
+      </span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    <nav class="links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="https://github.com/aasifsajad0100" target="_blank" rel="noopener">GitHub</a>
+      <div class="nav-socials">
+        <a href="https://github.com/aasifsajad0100" target="_blank" rel="noopener" aria-label="GitHub">gh</a>
+        <a href="https://www.linkedin.com/in/asif-sajad-9b8128278/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+        <a href="mailto:aasifsajad2@gmail.com" aria-label="Email">@</a>
+      </div>
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">🌙</button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero" style="border-top:none;">
+    <div class="wrap">
+      <div class="page-eyebrow">df.contact()</div>
+      <h1 class="page-title">Get in touch</h1>
+      <p class="page-sub">Open to internships, entry-level Data/ML roles, and web projects. Send a message below — it goes straight to my inbox.</p>
+    </div>
+  </section>
+
+  <section style="border-top:none;">
+    <div class="wrap">
+      <div class="contact-panel reveal">
+        <div>
+          <h2>Let's build something.</h2>
+          <p>Open to internships and entry-level Data / ML roles. Send a message below — it goes straight to my inbox.</p>
+          <div class="contact-links" style="margin-top:24px;">
+            <a href="mailto:aasifsajad2@gmail.com">✉ Email</a>
+            <a href="https://www.linkedin.com/in/asif-sajad-9b8128278/" target="_blank" rel="noopener">in LinkedIn</a>
+            <a href="https://github.com/aasifsajad0100" target="_blank" rel="noopener">⌥ GitHub</a>
+          </div>
+        </div>
+        <form class="send-msg" id="contactForm" action="https://formsubmit.co/aasifsajad2@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New message from your portfolio site">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <label for="f-name">Name</label>
+          <input type="text" id="f-name" name="Name" required placeholder="Your name">
+          <label for="f-email">Email (optional)</label>
+          <input type="email" id="f-email" name="Email" placeholder="you@example.com">
+          <label for="f-msg">Message</label>
+          <textarea id="f-msg" name="Message" rows="4" required placeholder="What's on your mind?"></textarea>
+          <button type="submit" class="btn btn-primary" id="sendBtn" style="justify-content:center;">Send message →</button>
+          <p class="form-note" id="formStatus">Sent directly to me — no email app needed, and email is optional.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <nav class="footer-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="experience.html">Experience</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="footer-copy">© 2026 <a href="index.html">Asif Sajad</a> · <a href="#top">Back to top ↑</a></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
