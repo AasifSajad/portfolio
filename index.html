@@ -204,13 +204,57 @@ header nav{flex:1;min-width:0;font-size:14.5px;gap:18px;scrollbar-width:none}hea
 .cb{position:absolute;inset:0;pointer-events:none;perspective:900px;perspective-origin:50% 0;clip-path:inset(0 -80px -140px -80px);z-index:3}
 .pgf{animation:fl5 .85s cubic-bezier(.45,.05,.55,1) forwards}@keyframes fl5{0%{transform:rotateX(0)}100%{transform:rotateX(-115deg)}}
 .pgf .bkf{transform-origin:50% 50%}
+.cb{clip-path:none}
+.pgf{animation:fl6 .65s linear forwards}
+@keyframes fl6{0%{transform:rotateX(0);animation-timing-function:cubic-bezier(.45,0,.85,.6)}42%{transform:rotateX(-88deg);animation-timing-function:cubic-bezier(.2,.6,.4,1)}65%{transform:rotateX(-120deg);animation-timing-function:cubic-bezier(.5,0,.7,1)}88%{transform:rotateX(-100deg);animation-timing-function:ease-out}100%{transform:rotateX(-92deg)}}
+
+.brand,.mbtn{display:none}
+#mnav{position:fixed;inset:0;z-index:24;background:#141211;color:#f1ede8;display:none;flex-direction:column;justify-content:center;padding:70px 8vw 0}
+#mnav.open{display:flex}#mnav a{display:block;font-size:34px;letter-spacing:-.03em;line-height:1.4}#mnav small{font:12px ui-monospace,Menlo,monospace;color:#8d8782;margin-right:14px;letter-spacing:.08em}#mnav .mt{margin-top:26px;color:#8d8782;font-size:14px}
+@media(hover:none){.doors:hover .door{opacity:1}#cur{display:none!important}.door:hover .swing{transform:none}.door.open:hover .swing{transform:rotateY(78deg)}}
+@media(max-width:860px){
+header nav,.time{display:none}
+header{z-index:26}
+.brand{display:block;font-weight:700;letter-spacing:-.02em;font-size:17px}
+.mbtn{display:block;border:1px solid var(--line);background:var(--pill);border-radius:99px;padding:8px 18px;font-size:14px;margin-right:46px}
+header .w{height:64px;width:calc(100% - 10vw)}
+#cord{right:14px;--len:17vh}#cord.pull{--len:calc(17vh + 18px)}
+.hero{min-height:100svh}
+.hero>.w:first-child{display:flex;flex-direction:column;justify-content:flex-start;padding-top:86px;width:calc(100% - 10vw)}
+.hero .l{padding-bottom:0}
+h1{font-size:40px}
+.pad{width:100%;font-size:clamp(28px,8.6vw,56px);margin:62px 0 28px}
+.btns{gap:10px}
+.photo{height:36vh;width:100%;justify-content:center;margin-top:auto;padding-top:14px}
+.ab{left:6%;bottom:28%;padding:12px 16px;font-size:14px}
+.hero>.w:last-child{width:calc(100% - 10vw)}
+.bar3{font-size:10px;letter-spacing:.04em;grid-template-columns:1fr 1fr;padding:16px 0 22px}.bar3 span:nth-child(2){display:none}
+.wall{padding-top:112px!important}
+.wall .dh{font-size:28px;line-height:1.1;white-space:normal;margin-bottom:28px}
+.wall .doors{width:auto;margin:0;overflow-x:auto;justify-content:flex-start;gap:6vw;padding:0 23vw 250px;scroll-snap-type:x mandatory;align-items:flex-start}
+.wall .door{flex:0 0 54vw;scroll-snap-align:center}
+.cap,.door:nth-child(n+3) .cap{position:absolute;top:100%;left:0;right:auto;width:100%;opacity:1;margin-top:22px}
+.cap b{font-size:22px}.cap li{font-size:13px;margin:5px 0}
+.wall .base{display:none}.wall .floor{height:30px}
+.story{height:420vh}
+.pin{grid-template-columns:1fr;grid-template-rows:auto 1fr;padding:70px 6vw 0;gap:0;height:100svh}
+.dl{display:none}
+.lc h2{font-size:26px;margin:6px 0 4px}.yr{font-size:84px;margin:2px 0 6px;line-height:.95}
+.rail{height:100%}.items{padding-left:22px}.it{padding-bottom:16vh}.it h3{font-size:24px}.it h5{font-size:15px}.it li{font-size:14px}
+.cta{padding:90px 0 36px}.cta h2{font-size:40px}.cta p{font-size:16px}
+.foot{margin-top:70px}.copy{margin-top:34px}
+#skill{padding:90px 0 120px}.sk-h{font-size:44px}.sc{padding:28px 20px 56px}
+#modal>.mc{padding:28px 22px 22px;border-radius:24px}.mc h2{margin-bottom:18px}.mf{flex-direction:column-reverse;align-items:stretch;gap:12px}.mf .pillbtn{justify-content:space-between}
+#top2{right:16px;bottom:16px;width:46px;height:46px}
+}
 </style>
 </head>
 <body>
 <div id="loader"><div class="lt mono"><span>Asif Sajad<br><small>Portfolio</small></span><span>Data · ML · Web · Programming</span></div><div><div class="mono" style="color:var(--mute)">Opening up the work</div><b id="pct">000</b></div><div class="bar"><i></i></div><div id="pills"></div></div>
 <button id="cord" aria-label="Pull the cord to switch the light"></button>
 
-<header id="hd"><div class="w"><nav id="nav"><a href="#top">Home</a><a href="#data-science">Data Science</a><a href="#machine-learning">Machine Learning</a><a href="#web-development">Web Development</a><a href="#programming">Programming</a><a href="#story">My story</a><a href="#contact">Contact</a></nav><div class="time">Local time<b id="clk">—</b>• <span id="dt"></span></div></div></header>
+<header id="hd"><div class="w"><a class="brand" href="#top">Asif Sajad</a><nav id="nav"><a href="#top">Home</a><a href="#data-science">Data Science</a><a href="#machine-learning">Machine Learning</a><a href="#web-development">Web Development</a><a href="#programming">Programming</a><a href="#story">My story</a><a href="#contact">Contact</a></nav><div class="time">Local time<b id="clk">—</b>• <span id="dt"></span></div><button class="mbtn" id="mbtn">Menu</button></div></header>
+<div id="mnav"><a href="#top"><small>01</small>Home</a><a href="#data-science"><small>02</small>Data Science</a><a href="#machine-learning"><small>03</small>Machine Learning</a><a href="#web-development"><small>04</small>Web Development</a><a href="#programming"><small>05</small>Programming</a><a href="#story"><small>06</small>My story</a><a href="#contact"><small>07</small>Contact</a><div class="mt">Available for work · Remote-first, worldwide</div></div>
 
 <section class="hero" id="top"><div class="w">
 <div class="l"><div class="mono" style="letter-spacing:.02em;text-transform:none;font:inherit;font-size:16px;color:#6b6560"><span class="dot"></span>Student &amp; Freelancer</div>
@@ -258,7 +302,7 @@ var t0=performance.now();(function ct(n){var k=Math.min(1,(n-t0)/3600);$('pct').
 function tick(){var d=new Date(),t=d.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'}).replace(' ','').toLowerCase();$('clk').textContent=t;$('clk2').textContent=t;$('dt').textContent=d.getDate()+' '+d.toLocaleString('en-US',{month:'long'})+', '+d.getFullYear()}tick();setInterval(tick,20000);
 addEventListener('scroll',function(){$('hd').classList.toggle('s',scrollY>40);$('top2').classList.toggle('on',scrollY>600)});
 $('cord').onclick=function(){var c=this;c.classList.add('pull');setTimeout(function(){c.classList.remove('pull')},260);var r=document.documentElement;r.dataset.theme=(r.dataset.theme==='dark'||(!r.dataset.theme&&matchMedia('(prefers-color-scheme:dark)').matches))?'light':'dark'};
-var R=['Data Scientist','ML Engineer','Web Developer','Programmer'],FL=[],i=0;setInterval(function(){var f=$('face'),o=document.createElement('div');o.className='pgf';o.innerHTML='<div class="face fr">'+f.innerHTML+'</div><div class="face bkf"></div>';f.classList.remove('fs');void f.offsetWidth;f.classList.add('fs');$('cb').appendChild(o);setTimeout(function(){o.remove()},950);i=(i+1)%R.length;$('rl').textContent=R[i];$('rc').textContent='0'+(i+1)+' / 04'},3600);
+var R=['Data Scientist','ML Engineer','Web Developer','Programmer'],FL=[],i=0;setInterval(function(){var f=$('face'),o=document.createElement('div');o.className='pgf';o.innerHTML='<div class="face fr">'+f.innerHTML+'</div><div class="face bkf"></div>';f.classList.remove('fs');void f.offsetWidth;f.classList.add('fs');$('cb').appendChild(o);setTimeout(function(){o.remove()},720);i=(i+1)%R.length;$('rl').textContent=R[i];$('rc').textContent='0'+(i+1)+' / 04'},3000);
 var ov=$('ov'),gc=$('gc'),rx=0,ry=0,fl=0,dr=false,sx=0,bs=0,ST=[['Data Science',85],['Machine Learning',75],['Web Development',80],['Programming',70]],lx=0;
 $('gs').innerHTML=ST.map(function(s,i){var n=Math.round(s[1]/10);return (i==2?'<hr>':'')+'<div><span>'+s[0]+'</span><em>'+'\u25c6'.repeat(n)+'\u25c7'.repeat(10-n)+'</em><b>'+s[1]+'</b></div>'}).join('');
 for(var q=0;q<40;q++){var sp=document.createElement('span'),z=2+Math.random()*5;sp.className='sp';sp.style.cssText='left:'+Math.random()*100+'%;top:'+(40+Math.random()*60)+'%;width:'+z+'px;height:'+z+'px;animation-duration:'+(8+Math.random()*10)+'s;animation-delay:-'+Math.random()*10+'s';ov.appendChild(sp)}
@@ -293,6 +337,10 @@ function stT(){var r=ST.getBoundingClientRect(),m=r.height-innerHeight;tg=Math.m
 var P={'data-science':{t:'Data Science',s:'Cleaning, exploring and testing data in Python and R, from raw tables to clear answers.',c:[{k:'DATA PROJECT · IN PROGRESS',t:'Student Performance Analysis',s:'ML project',d:'An ML project that analyzes student performance data with Python: preprocessing, exploration, model building and evaluation.',h:['Python','Pandas','scikit-learn'],x:'Student<br>performance<br>analysis.'}]},'machine-learning':{t:'Machine Learning',s:'Building, benchmarking and evaluating models and optimizers.',c:[{k:'ML PROJECT',t:'HAOA',s:'Hybrid Adaptive Optimization Algorithm',d:'A metaheuristic optimizer combining adaptive learning, mutation refinement, elite exploitation and Lévy-flight exploration, benchmarked against PSO on five test functions. It beat PSO on Ackley and Rosenbrock; PSO won on Rastrigin and Griewank.',h:['Python','Optimization','Benchmarking'],l:'https://github.com/AasifSajad/HAOA-Hybrid-Adaptive-Optimization-Algorithm',x:'<svg viewBox="0 0 200 90" style="width:100%;margin-bottom:8px"><polyline points="0,10 20,40 40,58 70,70 110,78 200,82" fill="none" stroke="#d9482b" stroke-width="3"/><polyline points="0,12 30,28 60,44 100,56 150,64 200,70" fill="none" stroke="#999" stroke-width="3"/></svg>HAOA<br>vs PSO.'}]},'web-development':{t:'Web Development',s:'Websites and interactive pages, built from scratch and responsive on every screen.',c:[{k:'WEBSITE BUILD',t:'Personal Portfolio',s:'Multi-page static site',d:'A multi-page site with dataframe-styled navigation, an animated regression-line hero, dark/light theming and a working contact form.',h:['HTML','CSS','JavaScript'],l:'https://github.com/AasifSajad/portfolio',x:'Hi, I’m<br>Asif.'}]},'programming':{t:'Programming',s:'C and C++ fundamentals from my degree, plus self-taught Python and R.',c:[{k:'FOUNDATIONS',t:'C & C++ coursework',s:'BSc Data Science, IUST',d:'Core programming and statistics coursework that sits underneath the higher-level data and ML work.',h:['C','C++','Python','R'],x:'C · C++<br>Python · R'}]}};
 function route(){var h=location.hash.slice(1),x=P[h],s=$('skill');document.querySelectorAll('#nav a').forEach(function(a){a.classList.toggle('act',a.hash==='#'+h&&!!x)});if(x){$('skt').textContent=x.t;$('sks').textContent=x.s;$('skc').innerHTML=x.c.map(function(c){return '<article class="sc"><div><div class="mono">'+c.k+'</div><h3>'+c.t+'</h3><div style="color:var(--mute)">'+c.s+'</div><p>'+c.d+'</p><div class="ch">'+c.h.map(function(y){return '<span>'+y+'</span>'}).join('')+'</div>'+(c.l?'<a class="pillbtn" target="_blank" href="'+c.l+'">View on GitHub <i>→</i></a>':'')+'</div><div class="dev"><div class="scr">'+c.x+'</div></div></article>'}).join('');s.classList.add('on');s.scrollTop=0;document.body.style.overflow='hidden'}else{var was=s.classList.contains('on');s.classList.remove('on');document.body.style.overflow='';var e2=h&&$(h);if(e2)e2.scrollIntoView({behavior:'instant'});else if(was)$('work').scrollIntoView({behavior:'instant'});if(was&&lastDoor>=0){var k2=lastDoor;lastDoor=-1;exitDoor(k2)}}}
 addEventListener('hashchange',route);route();
+$('mbtn').onclick=function(){var m=$('mnav');m.classList.toggle('open');this.textContent=m.classList.contains('open')?'Close':'Menu'};
+document.querySelectorAll('#mnav a').forEach(function(a){a.addEventListener('click',function(){$('mnav').classList.remove('open');$('mbtn').textContent='Menu'})});
+function tch(e){var t=e.touches[0],b=pc.getBoundingClientRect();mx=t.clientX-b.left;my=t.clientY-b.top;if(!pon){cx=mx;cy=my}pon=true;pw.classList.add('on');clearTimeout(pt);pt=setTimeout(function(){pw.classList.remove('on');pon=false},2500)}
+pw.addEventListener('touchstart',tch,{passive:true});pw.addEventListener('touchmove',tch,{passive:true});
 var EMAIL='';$('send').onclick=function(){if($('hp').value)return;var t='Name: '+$('fn').value+'\nEmail: '+$('fe').value+'\nPhone: '+$('fp').value+'\n\n'+$('fm').value;if(EMAIL){location.href='mailto:'+EMAIL+'?subject='+encodeURIComponent('Portfolio enquiry')+'&body='+encodeURIComponent(t)}else{try{navigator.clipboard.writeText(t)}catch(e){}window.open('https://www.linkedin.com/in/asif-sajad-9b8128278/','_blank')}$('mh').textContent='Almost there';$('mb').textContent=EMAIL?'Your email app has opened with your message ready. Press send there and I\u2019ll reply within one business day.':'Your message is copied. Paste it into LinkedIn and I\u2019ll reply within one business day.'};
 </script>
 </body>
